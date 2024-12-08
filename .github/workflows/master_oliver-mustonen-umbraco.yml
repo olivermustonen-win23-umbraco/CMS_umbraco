@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'oliver-mustonen-umbraco'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5CFAD24B51794C7D87B347FCD41E8AD8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DBC1D7876DEA4A6CB61C4DAD97501300 }}
           package: .
