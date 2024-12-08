@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,400;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Poppins:ital,wght@0,400;1,400;1,500&family=Smooch+Sans:wght@300;400;500;600;700;900&display=swap");
+html, body {
+  margin: 0;
+}
+
+
+.s3-font {
+  color: #D9C3A9;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.btn-yellow {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  border-radius: 25px;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+header {
+  background-color: #FFFFFF;
+  padding: 16px;
+}
+header .container {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#topbar {
+  padding: 16px;
+  background-color: #4F5955;
+}
+
+#topbar .container {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navmenu a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+
+.socialmedia i {
+  color: #FFFFFF;
+}
+
+.page-title {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding-top: 30px;
+}
+.page-title .container{
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.page-title .container li a{
+  margin: 30px;
+}
+
+.showcase {
+
+  background-image: url("/media/pkheipk4/hero.webp");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: 0% 100%;
+
+  
+}
+.showcase .container {
+  height: 550px;
+}
+
+.showcase h1 {
+  padding-top: 6rem;
+  font-weight: bold;
+  font-size: 4em;
+  color: #535656;
+  margin-bottom: 2rem;
+}
+
+.showcase p {
+  margin-bottom: 2rem;
+}
+.showcase a {
+  color: #FFFFFF;
+  background-color: #4F5955;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 12px 22px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+.about-us {
+  margin-top: 5rem;
+}
+.about-us .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.about-us .container h6{
+  color: #D9C3A9;
+}
+.about-us .container h2{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #535656;
+  margin-bottom: 2.5rem;
+}
+
+.about-us .container form{
+  position: absolute;
+  
+ padding-bottom: 3rem;
+ left: 68rem;
+ box-shadow: 0px 5px 5px 1px #F3F3F3;
+ background-color: #FFFFFF;
+}
+
+.about-us .container .form-req{
+  background-color: #4F5955;
+  color: #FFFFFF;
+  padding: 2rem;
+}
+.about-us form .form-container{
+  padding: 2rem;
+}
+.about-us form .form-container input{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+#our {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  background-color: #F7F7F7;
+}
+#our h6{
+  text-align: center;
+  color: #D9C3A9;
+}
+#our h2{
+  text-align: center;
+}
+
+
+.showcase-about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.showcase-about .container{
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase-about .container .content{
+  padding-left: 4rem;
+}
+
+.reviews {
+  background-color: #F7F7F7;
+    background-image: url("/media/nm1c2rmr/kevin-gardner.webp");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: 100% 0%;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+.reviews .container{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expert {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+.expert .container {
+  background-color: #FFFFFF;
+ 
+}
+.expert .container .section-title {
+  text-align: center;
+}
+.expert .container .team-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.expert .container .team-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.expert .container .what-our-client-says article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+}
+.expert .container .what-our-client-says article a {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.expert .container .what-our-client-says article p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  padding-right: 1rem;
+}
+.expert .container .what-our-client-says article .red-font {
+  color: #D9C3A9;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.expert .container .what-our-client-says article i {
+  margin-left: 5px;
+  margin-bottom: 1rem;
+  color: #F94D1C;
+}
+.expert .container .what-our-client-says article .clients {
+  display: flex;
+}
+.expert .container .what-our-client-says article .clients img {
+  height: 50%;
+  margin-top: 2rem;
+  margin-right: 15px;
+}
+.expert .container .all-reviews {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.contact-info .container {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guide {
+  background-image: url("/media/q0fhlme1/map-1.webp");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: 0% 0%;
+  padding-top: 5rem;
+  padding-bottom: 7rem; 
+}
+
+.guide .container {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  
+}
+.guide .container .req-text{
+  text-align: center;
+  
+}
+.guide .container .req-form{
+  display: flex;
+  gap: 2rem;
+  
+}
+
+footer {
+  background-color: #0E0E0E;
+  color: white;
+}
+footer .container .copyright{
+  display: flex;
+  gap: 5px;
+  padding-top: 20px;
+
+}
+
+footer .container .information{
+  color: #4F5955;
+  
+}
+footer .container a{
+  color: #D9C3A9;
+  text-decoration: none;
+  
+}
+

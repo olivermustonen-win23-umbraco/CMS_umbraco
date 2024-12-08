@@ -1,0 +1,30 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@inject Umbraco.Cms.Web.Common.UmbracoHelper UmbracoHelper
+@{
+    var rootContents = UmbracoHelper.ContentAtRoot();
+    var settings = rootContents?.FirstOrDefault(x => x.ContentType.Alias == "settingsPage") ?? null;
+    var siteName = settings?.Value<string>("siteName") ?? "";
+}
+
+<section class="contact-info">
+    <div class="container">
+        <img src="/media/jganoayc/component-1.webp" alt="image of a man crossing arms smiling">
+
+        <div class="content">
+            <h2>Let us know about your next project</h2>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
+            
+            <i class="fa-solid fa-phone"></i>
+            <p>Phone number</p>
+            <p>+46 8 123 456 75</p>
+
+            <i class="fa-regular fa-envelope"></i>
+            <p>E-mail address</p>
+            <p>sales@onatrix.com</p>
+        
+        </div>
+        
+    </div>
+</section>

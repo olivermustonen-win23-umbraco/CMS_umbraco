@@ -1,0 +1,56 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@inject Umbraco.Cms.Web.Common.UmbracoHelper UmbracoHelper
+@{
+    var rootContents = UmbracoHelper.ContentAtRoot();
+    var settings = rootContents?.FirstOrDefault(x => x.ContentType.Alias == "settingsPage") ?? null;
+    var siteName = settings?.Value<string>("siteName") ?? "";
+}
+
+<section class="showcase">
+	<div class="container">
+		<h1>We bring<br> success to you</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur. adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br> ad minim</p>
+		<a href="/contact/">Contact us</a>
+		
+	</div>
+</section>
+			
+<section class="about-us">
+	<div class="container">
+		<div class="exp">
+			<h6>ABOUT US</h6>
+			<h2>We have 40 years experience</h2>
+			<p>“We have over 25 years of experience providing expert financial<br> advice to both businesses and individuals.”</p>
+			<p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<br> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+			<img src="/media/lsqii0ml/signature-tina.webp" alt="signature" />
+			<p>Tina Fox - CEO & Founder</p>
+		</div>
+		
+
+		<form>
+				<div class="form-req">
+					<h3>Request a call back</h3>
+				</div>
+				<div class="form-container">
+					<p>Dolor in reprehenderit in voluptate velit esse cillum dolore eu<br> fugiat nulla pariatur excepteur sint occaecat</p>
+
+					<div class="form-input-group">
+						<input id="name" name="name" type="text" placeholder="Name" class="form-control">
+						
+					</div>
+					<div class="form-input-group">
+						<input id="email" name="email" type="email" placeholder="Email address" class="form-control">
+						
+					</div>
+					<div class="form-input-group">
+						<input id="phone" name="phone" type="tel" placeholder="Phone" class="form-control">
+						
+					</div>
+					<div class="form-input-group">
+						<input type="submit" name="submit" class="btn-sub " value="Submit">
+					</div>
+				</div>
+		</form>
+	</div>			
+</section>
